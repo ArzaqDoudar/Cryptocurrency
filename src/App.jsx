@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import {Switch , Route , Link} from 'react-dom';
+import {Layout , Typography , space} from 'antd';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="app">
+      <div className="navbar"></div>
+      <div className="main"></div>
+      <div className="footer"></div>
+    </div>
   )
 }
 
-export default App
+export default App  
+
+//! these are some packages we will installed to help us in this project:
+//* ant design :for styling
+//* redux : for 
+//* axios : to make an api request
+//* chart.js : for creating a chart
+//* react-chartjs-2 : to render chartjs
+//* html-react-parser : to parse some html data
+//* millify:
+//* moment : to parse times and dates
